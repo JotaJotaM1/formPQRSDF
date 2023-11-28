@@ -42,7 +42,7 @@ h1 {
 .containForm {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px;
+  padding: 20px 0;
 }
 .selectCity{
   margin: 0px 0 15px;
