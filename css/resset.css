@@ -102,3 +102,4 @@ meter {
 /* Remove details summary webkit styles */
 ::-webkit-details-marker {
     display: none;
+}
