@@ -46,14 +46,17 @@ h1 {
   border-top: none;
   border: solid 1px rgb(201, 199, 199);
 }
+.selectCity{
+  margin: 0px 0 15px;
+}
 
-.labelForm {
+.labelForm, .selectCity {
   margin: 5px 0;
   color: #040444;
   font-weight: 500;
 }
 
-.inputForm {
+.inputForm, .selectCity {
   border: 1px solid rgb(190, 188, 188);
   border-radius: 0.2rem;
   height: 30px;
