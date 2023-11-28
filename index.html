@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
+
 <body>
     <main>
-        <div class="logroTravel">
-
-        </div>
+        <div class="logroTravel"></div>
+        <h1>Formulario de PQR</h1>
         <div class="containText">
             <p class="textOne">
-
+                Nuestro propósito es ofrecer un excelente servicio, con calidez
+                humana, serio, responsable y directo, la agradecemos diligenciar el
+                siguiente formulario, si tiene algún comentario que hacernos para mejorar
+                nuestro servicio:
             </p>
         </div>
         <div>
-            <form>
+            <form class="containForm" action="/procesar_formulario" method="post">
+                <label class="labelForm" for="fecha">Fecha:</label>
+                <input class="inputForm" type="date" id="fecha" name="fecha" required><br>
 
+                <label class="labelForm" for="nombre">Nombre:</label>
+                <input class="inputForm" type="text" id="nombre" name="nombre" required><br>
+
+                <label class="labelForm" for="apellido">Apellido:</label>
+                <input class="inputForm" type="text" id="apellido" name="apellido" required><br>
+
+                <label class="labelForm" for="correo">Correo electrónico:</label>
+                <input class="inputForm" type="email" id="correo" name="correo" required><br>
+
+                <label class="labelForm" class="description" for="descripcion">Descripción:</label>
+                <textarea class="inputForm" id="descripcion" name="descripcion"></textarea><br>
+
+                <div class="containButtos">
+                    <input class="buttonOne" type="submit" value="Enviar">
+                    <input class="buttonTwo" type="reset" value="Borrar">
+                </div>
             </form>
         </div>
-        <div>
+        <div class="exclusive">
             <p>
-
+                Para uso exclusivo de Travel Center Group S.A.S
             </p>
         </div>
     </main>
-    
-    
 </body>
+
 </html>
