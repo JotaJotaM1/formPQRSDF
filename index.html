@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css" />
-    
+
 </head>
 
 <body>
@@ -27,9 +27,9 @@
                 <label class="labelForm" for="fecha">Fecha:</label>
                 <input class="inputForm" type="date" id="fecha" name="fecha" required><br>
 
-                <label class="labelForm" for="Ciudad">Ciudad:</label>
+                <label class="labelForm" for="ciudad">Ciudad:</label>
                 <select class="selectCity" id="ciudad" name="ciudad">
-                    <option value="" disabled selected></option>
+                    <option value="Ciudad" disabled selected></option>
                     <option value="Aguachica">Aguachica</option>
                     <option value="Apartadó">Apartadó</option>
                     <option value="Arauca">Arauca</option>
@@ -124,17 +124,17 @@
                 <input class="inputForm" type="email" id="correo" name="correo" required><br>
 
                 <label class="labelForm" class="description" for="descripcion">Descripción:</label>
-                <textarea class="inputForm" id="descripcion" name="descripcion"></textarea><br>
+                <textarea class="inputForm" id="descripcion" name="descripcion" maxlength="1000"></textarea><br>
 
                 <label class="labelForm" for="adjunto">Adjuntar documento: <i class="bi bi-paperclip"></i></label>
                 <input class="inputFormAdjunto" type="file" id="adjunto" name="adjunto"
                     accept=".pdf, .doc, .docx, .jpg, .png"><br>
-                    
 
                 <div class="containButtos">
                     <input class="buttonOne" type="submit" value="Enviar">
                     <input class="buttonTwo" type="reset" value="Borrar">
                 </div>
+
             </form>
         </div>
         <div class="exclusive">
