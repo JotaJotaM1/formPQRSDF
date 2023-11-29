@@ -22,8 +22,9 @@
                 nuestro servicio:
             </p>
         </div>
-        <div>
+        <div class="containFatherForm">
             <form class="containForm" action="/procesar_formulario" method="post" enctype="multipart/form-data">
+
                 <label class="labelForm" for="fecha">Fecha:</label>
                 <input class="inputForm" type="date" id="fecha" name="fecha" required><br>
 
@@ -115,16 +116,19 @@
                 </select>
 
                 <label class="labelForm" for="nombre">Nombre:</label>
-                <input class="inputForm" type="text" id="nombre" name="nombre" required><br>
+                <input class="inputForm" type="text" id="nombre" name="nombre" oninput="validateText(this)" required><br>
 
                 <label class="labelForm" for="apellido">Apellido:</label>
-                <input class="inputForm" type="text" id="apellido" name="apellido" required><br>
+                <input class="inputForm" type="text" id="apellido" name="apellido" oninput="validateText(this)" required><br>
 
                 <label class="labelForm" for="correo">Correo electrónico:</label>
                 <input class="inputForm" type="email" id="correo" name="correo" required><br>
 
+
                 <label class="labelForm" class="description" for="descripcion">Descripción:</label>
                 <textarea class="inputForm" id="descripcion" name="descripcion" maxlength="1000"></textarea><br>
+
+
 
                 <label class="labelForm" for="adjunto">Adjuntar documento: <i class="bi bi-paperclip"></i></label>
                 <input class="inputFormAdjunto" type="file" id="adjunto" name="adjunto"
@@ -145,5 +149,4 @@
     </main>
     <script src="script.js"></script>
 </body>
-
 </html>

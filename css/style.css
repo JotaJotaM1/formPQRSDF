@@ -1,10 +1,6 @@
 @import url(/css/resset.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 
-:root{
---blue-text:var(#040444);
-}
-
 body{
   margin: 0;
 }
@@ -27,20 +23,20 @@ main {
 h1 {
   font-size: 20px;
   margin: 0 0 20px;
-  color: var(--blue-text);
+  color: #040444;
   font-weight: 500;
 }
 .containText {
-  margin: 0 1%;
+  width: 340px;
   border: solid 1px rgb(201, 199, 199);
   padding: 13px;
   text-align: center;
   background-color: beige;
-  border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: 0.5rem;
 }
 
 .textOne {
-  color: var(--blue-text);
+  color: #040444;
   margin: 0;
   font-size: 14px;
 }
@@ -55,7 +51,7 @@ h1 {
 
 .labelForm, .selectCity {
   margin: 5px 0;
-  color: var(--blue-text);
+  color: #040444;
   font-weight: 500;
   cursor: pointer;
 }
@@ -102,7 +98,7 @@ h1 {
 }
 
 .inputFormAdjunto{
-  color: var(--blue-text);
+  color: #040444;
   border: 1px solid rgb(190, 188, 188);
   border-radius: 0.2rem;
   height: 21px;
@@ -111,4 +107,31 @@ h1 {
 }
 .bi{
 font-size: 25px; 
+}
+
+@media screen and (min-width: 1024px){
+  h1{
+    font-size: 26px;
+  }
+  .containText{
+    width: 357px;
+  }
+  .textOne{
+    font-size: 17px
+  }
+  .inputForm, .selectCity{
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputForm, .selectCity, .inputFormAdjunto{
+    width: 380px;
+  }
+  .containButtos{
+    padding: 0 35px;
+  }
+  #descripcion{
+    height: 200px;
+  }
+
 }
